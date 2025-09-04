@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  db:
+    image: postgres
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: postgres_admin
+      POSTGRES_PASSWORD: 654244141
+      POSTGRES_DB: postgres_db
+    volumes:
+      - postgres_db_beta_test:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: always
+
+volumes:
+  postgres_db_beta_test:

@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: backend
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres_db
+    username: postgres_admin
+    password: 654244141
+  jpa:
+    hibernate:
+      ddl-auto: update # หรือ validate, create, create-drop.
+    # show-sql: true # ตั้งค่าเป็น true เพื่อแสดง SQL query ที่ Hibernate สร้างขึ้น
+    # properties:
+    #   hibernate:
+    #     format_sql: true # จัดรูปแบบ SQL ให้อ่านง่ายขึ้น
+
+jwt:
+  private-key-path: src/main/resources/keys/private.pem
+  public-key-path: src/main/resources/keys/public.pem
+
+server:
+  port: 8080

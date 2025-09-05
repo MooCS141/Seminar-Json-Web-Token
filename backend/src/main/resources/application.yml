@@ -8,11 +8,7 @@ spring:
     password: 654244141
   jpa:
     hibernate:
-      ddl-auto: update # หรือ validate, create, create-drop.
-    # show-sql: true # ตั้งค่าเป็น true เพื่อแสดง SQL query ที่ Hibernate สร้างขึ้น
-    # properties:
-    #   hibernate:
-    #     format_sql: true # จัดรูปแบบ SQL ให้อ่านง่ายขึ้น
+      ddl-auto: update
 
 jwt:
   private-key-path: src/main/resources/keys/private.pem

@@ -1,2 +1,2 @@
 # Seminar-Json-Web-Token
-Workshop on JWT Architecture with TypeScript, Vue.js, Java Spring Boot, and PostgreSQL
+Workshop on JWT Architecture with TypeScript, React.js, Java Spring Boot, and PostgreSQL
